@@ -29,7 +29,3 @@ class Server:
         print self.server_pid2
         subprocess.Popen('taskkill /F /T /PID %i' % self.server_pid1)
         subprocess.Popen('taskkill /F /T /PID %i' % self.server_pid2)
-
-ab=Server()
-ab.open_appium("cmd"," /K appium -p 4723"," /K appium -p 4750")
-ab.kill_appium()
