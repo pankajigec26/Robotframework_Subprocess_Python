@@ -15,7 +15,7 @@ Example
 *** Keywords ***
 Start Server
     ${source_result} =    server_start.open_appium    ${terminal}    ${command1}    ${command2}
-    #${source_result} =    server_start.open_appium    ${terminal}    ${options}    ${Server_command2}
+
     sleep    60
 kill server
     ${result} =    server_start.kill_appium
